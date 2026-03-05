@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Biodata Lengkap</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+
+background: linear-gradient(-45deg,#ff6a00,#ff00cc,#0099ff,#00ff88);
+background-size:400% 400%;
+animation:bg 12s infinite;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:12px;
+width:380px;
+box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+h2{
+text-align:center;
+margin-bottom:20px;
+}
+
+input,select,textarea{
+width:100%;
+padding:8px;
+margin-top:5px;
+margin-bottom:12px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+textarea{
+height:60px;
+}
+
+.radio{
+width:auto;
+}
+
+button{
+padding:8px 12px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.simpan{
+background:#28a745;
+color:white;
+}
+
+.reset{
+background:#dc3545;
+color:white;
+}
+
+.kembali{
+background:#007bff;
+color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Biodata Lengkap</h2>
+
+<form>
+
+Nama Lengkap
+<input type="text">
+
+Password
+<input type="password">
+
+Tempat Lahir
+<input type="text">
+
+Tanggal Lahir
+<input type="date">
+
+Jenis Kelamin <br>
+<input class="radio" type="radio" name="jk"> Laki-laki
+<input class="radio" type="radio" name="jk"> Perempuan
+<br><br>
+
+Agama
+<select>
+<option>Islam</option>
+<option>Kristen</option>
+<option>Katholik</option>
+<option>Hindu</option>
+<option>Buddha</option>
+<option>Konghucu</option>
+</select>
+
+Nama Ayah
+<input type="text">
+
+Nama Ibu
+<input type="text">
+
+Pekerjaan Ayah
+<input type="text">
+
+Pekerjaan Ibu
+<input type="text">
+
+Hobi <br>
+<input type="checkbox"> Membaca
+<input type="checkbox"> Gaming
+<input type="checkbox"> Olahraga
+<input type="checkbox"> Musik
+<br><br>
+
+Jenjang Pendidikan
+<select>
+<option>TK</option>
+<option>SD</option>
+<option>SMP</option>
+<option>SMA</option>
+<option>Kuliah</option>
+</select>
+
+No HP
+<input type="tel">
+
+Email
+<input type="email">
+
+Alamat
+<textarea></textarea>
+
+<button class="simpan">Simpan</button>
+<button class="reset" type="reset">Reset</button>
+<button class="kembali">Kembali</button>
+
+</form>
+
+</div>
+
+</body>
+  </html>
